@@ -13,7 +13,7 @@ function Header() {
       display: 'flex',
       justifyContent: 'center',
       gap: '10px',
-      padding: '0px 0',
+      padding: '10px 0',
       background: '#1d5a3c', // Lloyds Bank dark green color
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Adds a subtle shadow for depth
     }}>

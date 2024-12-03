@@ -1,6 +1,22 @@
+import './transfer.css';
+
 function transfer() {
-    return <h2>This is the transfer Page</h2>;
-  }
+  const handleLloydsTransfer = () => {
+    console.log("Transfer to another Lloyds user clicked");
+   
+  };
+
+  const handleExternalBankTransfer = () => {
+    console.log("Transfer to external bank clicked");
   
-  export default transfer;
-  
+  };
+
+  return (
+    <div>
+      <button onClick={handleLloydsTransfer}>Transfer to another Lloyds User</button>
+      <button onClick={handleExternalBankTransfer}>Transfer to external bank</button>
+    </div>
+  );
+}
+
+export default transfer;
