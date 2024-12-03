@@ -9,15 +9,82 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <header style={{ display: 'flex', justifyContent: 'center', gap: '10px', padding: '1px', background: '#f5f5f5' }}>
-      <button onClick={() => navigate('/')} style={{ padding: '10px 20px' }}>Home</button>
-      <button onClick={() => navigate('/about')} style={{ padding: '10px 20px' }}>About</button>
-      <button onClick={() => navigate('/transfer')} style={{ padding: '10px 20px' }}>Transfer</button>
-      <button onClick={() => navigate('/account')} style={{ padding: '10px 20px' }}>Account</button>
-
+    <header style={{
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '10px',
+      padding: '10px 0',
+      background: '#1d5a3c', // Lloyds Bank dark green color
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Adds a subtle shadow for depth
+    }}>
+      <button 
+        onClick={() => navigate('/')} 
+        style={{
+          padding: '10px 20px',
+          background: '#2b7f54', // A lighter green for buttons
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          transition: 'background 0.3s'
+        }}
+        onMouseEnter={(e) => e.target.style.background = '#3f9f73'} // Hover effect
+        onMouseLeave={(e) => e.target.style.background = '#2b7f54'} // Revert to normal
+      >
+        Home
+      </button>
+      <button 
+        onClick={() => navigate('/about')} 
+        style={{
+          padding: '10px 20px',
+          background: '#2b7f54',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          transition: 'background 0.3s'
+        }}
+        onMouseEnter={(e) => e.target.style.background = '#3f9f73'}
+        onMouseLeave={(e) => e.target.style.background = '#2b7f54'}
+      >
+        About
+      </button>
+      <button 
+        onClick={() => navigate('/transfer')} 
+        style={{
+          padding: '10px 20px',
+          background: '#2b7f54',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          transition: 'background 0.3s'
+        }}
+        onMouseEnter={(e) => e.target.style.background = '#3f9f73'}
+        onMouseLeave={(e) => e.target.style.background = '#2b7f54'}
+      >
+        Transfer
+      </button>
+      <button 
+        onClick={() => navigate('/account')} 
+        style={{
+          padding: '10px 20px',
+          background: '#2b7f54',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          transition: 'background 0.3s'
+        }}
+        onMouseEnter={(e) => e.target.style.background = '#3f9f73'}
+        onMouseLeave={(e) => e.target.style.background = '#2b7f54'}
+      >
+        Account
+      </button>
     </header>
   );
 }
+
 
 function App() {
   return (
