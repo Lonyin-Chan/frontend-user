@@ -14,41 +14,41 @@ function Header() {
       justifyContent: 'center',
       gap: '10px',
       padding: '10px 0',
-      background: '#1d5a3c', // Lloyds Bank dark green color
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Adds a subtle shadow for depth
+      background: '#1d5a3c',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' 
     }}>
       <button 
         onClick={() => navigate('/')} 
         style={{
           padding: '10px 20px',
-          background: '#2b7f54', // A lighter green for buttons
+          background: '#2b7f54', 
           color: 'white',
           border: 'none',
           borderRadius: '5px',
           cursor: 'pointer',
           transition: 'background 0.3s'
         }}
-        onMouseEnter={(e) => e.target.style.background = '#3f9f73'} // Hover effect
-        onMouseLeave={(e) => e.target.style.background = '#2b7f54'} // Revert to normal
+        onMouseEnter={(e) => e.target.style.background = '#3f9f73'} 
+        onMouseLeave={(e) => e.target.style.background = '#2b7f54'}
       >
         Home
       </button>
-      <button 
-        onClick={() => navigate('/about')} 
+      {/* <button 
+        // onClick={() => navigate('/about')} 
         style={{
-          padding: '10px 20px',
-          background: '#2b7f54',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          transition: 'background 0.3s'
+          // padding: '10px 20px',
+          // background: '#2b7f54',
+          // color: 'white',
+          // border: 'none',
+          // borderRadius: '5px',
+          // cursor: 'pointer',
+          // transition: 'background 0.3s'
         }}
         onMouseEnter={(e) => e.target.style.background = '#3f9f73'}
         onMouseLeave={(e) => e.target.style.background = '#2b7f54'}
       >
         About
-      </button>
+      </button> */}
       <button 
         onClick={() => navigate('/transfer')} 
         style={{

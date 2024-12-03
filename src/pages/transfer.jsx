@@ -12,7 +12,7 @@ function transfer() {
   };
 
   return (
-    <div>
+    <div className='TransferButton'>
       <button onClick={handleLloydsTransfer}>Transfer to another Lloyds User</button>
       <button onClick={handleExternalBankTransfer}>Transfer to external bank</button>
     </div>
