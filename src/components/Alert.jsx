@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AlertComponent = () => {
-  const [showAlert, setShowAlert] = useState(false);
+  const [showAlert, setShowAlert] = useState(true);
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000);  // Alert disappears after 3 seconds
+  const handleRedirect = (url) => {
+    navigate(url);
   };
 
   return (
     <div>
-      <button onClick={handleClick}>Show Alert</button>
-
       {showAlert && (
         <div style={alertStyles} role="alert">
-          <strong>Alert!</strong> This is an important message.
+            <h3>Message from telephony agent!</h3>
+          <button onClick={() => handleRedirect('/account')}>Go to account</button>
         </div>
       )}
     </div>
@@ -24,7 +24,7 @@ const AlertComponent = () => {
 // Basic styles for the alert box
 const alertStyles = {
   padding: '20px',
-  backgroundColor: '#f44336',
+  backgroundColor: '#00B6FF',
   color: 'white',
   borderRadius: '5px',
   marginTop: '10px',
