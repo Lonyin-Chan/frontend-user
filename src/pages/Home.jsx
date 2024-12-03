@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import AlertComponent from '../components/Alert';
 
 const Home= () => {
   return (
@@ -8,14 +9,7 @@ const Home= () => {
         <h1>Welcome to Your Trusted Bank</h1>
         <p>Providing financial solutions for your future</p>
       </header>
-      <nav className="navbar">
-        <ul className="nav-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <AlertComponent/>
       <section className="hero">
         <h2>Empowering Your Financial Future</h2>
         <p>Explore our range of banking services tailored to your needs.</p>

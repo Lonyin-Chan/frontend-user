@@ -59,22 +59,48 @@
     background-color: #002f6c;
   }
   
-  .about, .services, .testimonials, .contact {
+  .about {
+    background-color: #e7f7e5; /* Light Green */
     padding: 40px 20px;
     text-align: center;
   }
   
-  .about p, .services ul, .testimonials blockquote {
+  .services {
+    background-color: #f9f9f9; /* Light Gray */
+    padding: 40px 20px;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .services li {
+    margin: 10px 0;
+  }
+  
+  .testimonials {
+    background-color: #fff3e6; /* Light Orange */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    color: #555;
     margin: 20px 0;
   }
   
-  .footer {
-    background-color: #1d5a3c;
-    color: white;
+  .contact {
+    background-color: #e7f7e5; /* Light Green */
+    padding: 40px 20px;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
   }
   
+  .footer {
+    background-color: #333; /* Dark Gray */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
